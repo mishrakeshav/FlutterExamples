@@ -1,3 +1,4 @@
+import 'package:examples/screens/login_screen.dart';
 import 'package:flutter/material.dart';
 
 class RegistrationScreen extends StatelessWidget {
@@ -88,7 +89,9 @@ class RegistrationScreen extends StatelessWidget {
             Column(
               children: [
                 TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pushNamed(context, LoginScreen.id);
+                  },
                   child: Text(
                     'Login',
                     style: TextStyle(
