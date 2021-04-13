@@ -1,4 +1,5 @@
 import 'package:examples/screens/home.dart';
+import 'package:examples/screens/list_wheel_example.dart';
 import 'package:examples/screens/login_screen.dart';
 import 'package:examples/screens/registration_screen.dart';
 import 'package:examples/screens/dismissable_widget.dart';
@@ -24,6 +25,7 @@ class MyApp extends StatelessWidget {
         HomeScreen.id: (BuildContext context) => HomeScreen(),
         ReorderableListExample.id: (BuildContext context) =>
             ReorderableListExample(),
+        ListWheelExample.id: (BuildContext context) => ListWheelExample(),
       },
     );
   }

@@ -1,3 +1,4 @@
+import 'package:examples/screens/list_wheel_example.dart';
 import 'package:examples/screens/login_screen.dart';
 import 'package:examples/screens/registration_screen.dart';
 import 'package:examples/screens/reorderable_list.dart';
@@ -36,6 +37,12 @@ class HomeScreen extends StatelessWidget {
             title: 'Dismissible Widget Screen',
             onTap: () {
               Navigator.pushNamed(context, DismissibleWidgetScreen.id);
+            },
+          ),
+          CustomizedCard(
+            title: 'List Wheel Scroll Example',
+            onTap: () {
+              Navigator.pushNamed(context, ListWheelExample.id);
             },
           ),
         ],
